@@ -6,25 +6,94 @@
     <title>Pet Shop </title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .galeria {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .imagem-produto {
+            margin: 10px;
+            display: flex;
+
+            
+        }
+        .imagem-produto img {
+            max-width: 150px; 
+            height: auto;
+        }
+        .produto p {
+            margin: 10px 0;
+        }
+        .botao-comprar {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .contato-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contato-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contato-form input[type="text"],
+        .contato-form input[type="email"],
+        .contato-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contato-form textarea {
+            height: 100px;
+        }
+        .contato-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contato-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
 <header>
+    
     <div class="logo">
-        <a href="index.html"><img src="57973.jpg" alt="Pet Shop XYZ"></a>
+        <a href="index.html"><img src="57973.jpg" alt="Pet Shop "></a>
     </div>
     <nav>
         <ul>
             <li><a href="#home">Página Inicial</a></li>
             <li><a href="#servicos">Nossos Serviços</a></li>
             <li><a href="#produtos">Nossos Produtos</a></li>
-            <li><a href="#contato">Fale Conosco</a></li>
+            <li><a href="#formulario-contato">Contato</a></li>
         </ul>
     </nav>
     <div class="contact-info">
-        <p>Telefone: (XX) XXXX-XXXX</p>
-        <p>E-mail: info@petshopxyz.com</p>
-        <p>Endereço: Av. Principal, 123 - Cidade, Estado</p>
+        <p>Telefone: (75) 99178-3176</p>
+        <p>E-mail: arthurpmbrito12@gmail.com</p>
+        <p>Endereço: Rua Dr.Evandro Cardoso, 125A - Feira de Santana, Bahia</p>
     </div>
 </header>
 
@@ -40,35 +109,159 @@
     </div>
 </section>
 
+<section id="sobre-nos">
+    <div class="centralizado">
+        <h2>Sobre Nós</h2>
+    </div>
+    <div class="historia">
+        <h3>Missão e Valores</h3>
+        <p>O Pet Shop  foi fundado em [ano de fundação] com a missão de oferecer os melhores serviços e produtos para atender às necessidades dos pets e de seus tutores. Nosso compromisso é proporcionar cuidados excepcionais, promover o bem-estar animal e tornar a experiência do cliente única e inesquecível.</p>
+        <p>Nossos valores fundamentais incluem amor pelos animais, integridade, compromisso com a excelência, ética profissional e respeito pela comunidade e meio ambiente.</p>
+    </div>
+    <div class="equipe">
+        <h3>Equipe</h3>
+        <p>Nossa equipe é composta por profissionais altamente qualificados e apaixonados por animais. Contamos com veterinários experientes, groomers dedicados, atendentes atenciosos e outros especialistas em cuidados com pets.</p>
+        <p>Cada membro da nossa equipe compartilha do mesmo compromisso de oferecer serviços de qualidade e atendimento personalizado para garantir a saúde, segurança e felicidade dos animais sob nossa responsabilidade.</p>
+    </div>
+</section>
+
+
 <section id="servicos">
+    <div class="centralizado">
     <h2>Serviços Oferecidos</h2>
-    <p>Oferecemos uma ampla gama de serviços para atender às necessidades do seu pet, incluindo banho e tosa, consultas veterinárias, hospedagem e muito mais.</p>
+    </div>
+    <p>Oferecemos uma ampla gama de serviços para atender às necessidades do seu pet.</p>
+    <ul>
+        <li>Banho e tosa: O petshop oferece serviços de banho e tosa para cães e gatos, incluindo cortes de pelos conforme as preferências do dono e necessidades da raça.</li>
+        <li>Consultas veterinárias: Alguns petshops têm veterinários que oferecem consultas básicas para verificar a saúde do animal, administrar vacinas e fornecer conselhos sobre cuidados.</li>
+        <li>Venda de alimentos e petiscos: O petshop vende uma variedade de alimentos para animais de estimação, incluindo rações secas e úmidas, bem como petiscos saudáveis e especiais.</li>
+        <li>Produtos de higiene e cuidados: Eles oferecem uma ampla gama de produtos de higiene, como xampus, condicionadores, escovas, cortadores de unhas, e itens para cuidados dentários e de ouvidos.</li>
+        <li>Acessórios e brinquedos: O petshop vende uma variedade de acessórios para animais de estimação, incluindo coleiras, guias, camas, caixas de transporte, brinquedos e outros itens de entretenimento.</li>
+        <li>Serviços de pet hotel: Alguns petshops oferecem serviços de hospedagem para animais de estimação quando os donos precisam viajar, proporcionando um ambiente seguro e confortável para os animais durante sua ausência.</li>
+        <li>Cursos de adestramento: Alguns petshops oferecem cursos de treinamento e socialização para cães, ajudando os donos a ensinar comandos básicos, resolver comportamentos indesejados e promover interações positivas entre animais e pessoas.</li>
+        <li>Serviços de delivery: Alguns petshops oferecem serviços de entrega de produtos, garantindo conveniência para os donos que preferem receber os itens em casa.</li>
+    </ul>
 </section>
 
 <section id="produtos">
-    <h2>Produtos à Venda</h2>
+    <div class="centralizado">
+        <h2>Produtos à Venda</h2>
+    </div>
     <p>Confira nossa seleção de produtos de alta qualidade para cuidar do seu pet, desde alimentos premium até brinquedos e acessórios.</p>
-    <!-- Aqui pode ser adicionada uma galeria de produtos -->
+    <div class="galeria">
+        <div class="produto">
+            <h3>Ração Premium</h3>
+            <img src="Ração.jpg" alt="Ração Premium">
+            <p class="valor-produto">R$ 50,00</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Ração Super Premium</h3>
+            <img src="Ração 2.jpg" alt="Ração Super Premium">
+            <p class="valor-produto">R$ 70,00</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Ração para gatos sabor carne</h3>
+            <img src="Ração 3.jpg" alt="Ração para gatos sabor carne">
+            <p class="valor-produto">R$ 190,40</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Ração para gatos adultos</h3>
+            <img src="Ração 4.jpg" alt="Ração para gatos adultos">
+            <p class="valor-produto">R$ 171,99</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Ração para cães de pequeno porte</h3>
+            <img src="Ração 5.jpg" alt="Ração para cães de pequeno porte">
+            <p class="valor-produto">R$ 55,90</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Bola cravinho</h3>
+            <img src="Brinquedo.jpg" alt="Bola cravinho">
+            <p class="valor-produto">R$ 5,99</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Chalesco Brinquedo Macaco Marrom Para Cães</h3>
+            <img src="Brinquedo 2.jpg" alt="Chalesco Brinquedo Macaco Marrom Para Cães">
+            <p class="valor-produto">R$ 24,49</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática</h3>
+            <img src="Acessórios.jpg" alt="Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática">
+            <p class="valor-produto">R$ 2,699</p>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)</h3>
+            <img src="Acessórios 2.jpg" alt="Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)">
+            <p class="valor-produto">R$ 329,90</p>
+            <button class="botao-comprar">Comprar</button>
+            <a href="#home">Voltar para o início</a>
+        </div>
+    </div>
 </section>
 
+
+
+
 <section id="depoimentos">
+    <div class="centralizado">
     <h2>Depoimentos</h2>
-    <blockquote>
-        <p>"Meu pet adorou o atendimento no Pet Shop XYZ. Recomendo a todos!" - Cliente Satisfeito</p>
-    </blockquote>
-    <!-- Mais depoimentos podem ser adicionados aqui -->
+    </div>
+    <ul>
+        <li>"Meu pet adorou o atendimento no Pet Shop . Recomendo a todos!" - Cliente Satisfeito</li>
+        <li>"Estou extremamente satisfeita com o serviço de banho e tosa que recebi no petshop! Meu cachorro nunca pareceu tão limpo e feliz depois de sair de lá. Definitivamente recomendo!" - Cliente Satisfeito</li>
+        <li>"O petshop não só tem uma grande variedade de alimentos para animais de estimação, mas também oferece um excelente atendimento ao cliente. Sempre que tenho dúvidas sobre o que alimentar meu gato, eles estão lá para me orientar." - Cliente Satisfeito</li>
+        <li>"Minha experiência com o veterinário do petshop foi incrível. Ele foi muito atencioso e cuidadoso durante a consulta do meu cãozinho. Senti que ele realmente se importava com o bem-estar do meu animal de estimação." - Cliente Satisfeito</li>
+        <li>"Comprei uma nova coleira e uma cama para meu cachorro no petshop e fiquei muito satisfeito com a qualidade dos produtos. Meu cachorro adorou a cama e a coleira parece durável e confortável. Definitivamente farei mais compras lá!" - Cliente Satisfeito</li>
+        <li>"Meu gato adorou os brinquedos que comprei no petshop! Eles têm uma seleção incrível de itens de entretenimento para animais de estimação. Foi ótimo ver meu gato tão entusiasmado e brincalhão." - Cliente Satisfeito</li>
+        <li>"Utilizei o serviço de hospedagem do petshop enquanto estava fora de férias e fiquei muito impressionado. Eles cuidaram do meu cachorro como se fosse deles, proporcionando um ambiente seguro e amoroso. Estou muito grato!" - Cliente Satisfeito</li>
+    </ul>
 </section>
 
 <section id="blog">
-    <h2>Blog</h2>
-    <article>
+    <div class="centralizado">
+        <h2>Blog</h2>
+    </div>
+    <div class="post">
+        <h3>Cuidados com Animais de Estimação</h3>
+        <p>Descubra dicas úteis para manter seu animal de estimação feliz e saudável. Desde a alimentação adequada até a higiene e exercícios, saiba como cuidar do seu pet da melhor maneira possível.</p>
+        <a href="https://www.petz.com.br/blog/saude-e-cuidados/saude-animal/">Leia mais</a>
+    </div>
+    <div class="post">
         <h3>Novidades no Mundo Pet</h3>
-        <p>Fique por dentro das últimas notícias e dicas sobre cuidados com animais de estimação.</p>
-    </article>
-    <!-- Mais posts do blog podem ser adicionados aqui -->
+        <p>Fique por dentro das últimas tendências e descubra os novos produtos e serviços disponíveis para cuidar do seu animal de estimação. Mantenha-se atualizado sobre tudo que está acontecendo no mundo dos pets.</p>
+        <a href="https://www.revistapetcenter.com.br/destaques-mercado-pet/novidades-do-mercado-pet-2023/">Leia mais</a>
+    </div>
+    <div class="post">
+        <h3>Eventos da Comunidade</h3>
+        <p>Participe de eventos e atividades da comunidade relacionadas a animais de estimação. Desde feiras de adoção até passeios em parques, encontre maneiras de se envolver e fazer a diferença na vida dos pets e de seus donos.</p>
+        <a href="https://www.santos.sp.gov.br/?q=noticia/feira-estreia-em-santos-com-ultimas-tendencias-do-mercado-pet">Leia mais</a>
+    </div>
+    <div id="formulario-contato" class="contato-form">
+        <h2>Formulário de Contato</h2>
+        <form action="enviar_email" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
 </section>
-
 <footer>
+    
     <nav>
         <ul>
             <li><a href="#politica-privacidade">Política de Privacidade</a></li>
@@ -76,6 +269,7 @@
             <li><a href="#mapa-site">Mapa do Site</a></li>
         </ul>
     </nav>
+    
     <div class="social-links">
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
@@ -85,4 +279,6 @@
 
 </body>
 </html>
+
+
 
