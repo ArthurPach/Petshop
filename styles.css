@@ -1,4 +1,4 @@
-/* Reset CSS básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Adicionando a fonte Roboto */
+    font-family: 'Roboto', sans-serif; 
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -49,7 +49,7 @@ section {
 section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* Adicionando a fonte Montserrat para títulos */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 section p {
@@ -70,7 +70,6 @@ footer {
     margin-right: 10px;
 }
 
-/* Estilos específicos para o formulário de contato */
 .contact-form {
     margin-top: 20px;
 }
@@ -99,23 +98,23 @@ footer {
     background-color: #c0392b;
 }
 nav ul li a {
-    color: #3498db; /* Azul claro para Página Inicial */
+    color: #3498db; 
 }
 
 nav ul li:nth-child(2) a {
-    color: #27ae60; /* Verde para Quem Somos */
+    color: #27ae60; 
 }
 
 nav ul li:nth-child(3) a {
-    color: #e67e22; /* Laranja para Nossos Serviços */
+    color: #e67e22; 
 }
 
 nav ul li:nth-child(4) a {
-    color: #9b59b6; /* Roxo para Nossos Produtos */
+    color: #9b59b6; 
 }
 
 nav ul li:nth-child(5) a {
-    color: #e74c3c; /* Vermelho para Fale Conosco */
+    color: #e74c3c; 
 }
 #destaque {
     background-color: #f8f8f8;
@@ -182,3 +181,44 @@ input[type="radio"]:checked + label {
 input[type="radio"]:checked + label + .tab-content {
     display: block;
 }
+.imagem-produto.alimentos img {
+    max-width: 100%;
+    height: auto;
+    width: 15.00%; 
+}
+#servicos,
+#produtos,
+#depoimentos,
+#blog {
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+.centralizado {
+    text-align: center; 
+}
+.produto {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.descricao-produto {
+    margin-top: 10px;
+}
+
+.descricao-produto h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.descricao-produto p {
+    font-size: 14px;
+    color: #888;
+}
+
