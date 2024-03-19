@@ -4,17 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Fundo mais claro */
+        }
+        header {
+            background-color: #4CAF50; /* Verde mais vibrante */
+            color: #fff;
+            padding: 20px 0; /* Maior espaçamento */
+            text-align: center;
+        }
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+            margin-top: 50px;
+        }
+        .produto-details {
+            display: flex;
+            background-color: #fff;
+            border-radius: 20px; /* Borda mais arredondada */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+            overflow: hidden;
+            max-width: 900px; /* Limita a largura */
+        }
+        .produto-info {
+            padding: 40px; /* Mais espaçamento interno */
+            flex: 1;
+        }
+        .produto-info h2 {
+            font-size: 32px; /* Tamanho maior */
+            margin-bottom: 20px; /* Espaçamento inferior aumentado */
+            color: #333;
+        }
+        .produto-info img {
+            max-width: 100%; /* Imagem responsiva */
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+        }
+        .valor-produto {
+            font-size: 28px; /* Tamanho maior */
+            font-weight: bold;
+            color: #4CAF50; /* Verde */
+            margin-bottom: 20px; /* Espaçamento inferior aumentado */
+        }
+        .descricao-produto {
+            color: #666;
+            margin-bottom: 30px; /* Espaçamento inferior aumentado */
+            line-height: 1.5; /* Espaçamento entre linhas aumentado */
+        }
+        .detalhes-produto {
+            background-color: #f9f9f9; /* Fundo mais claro */
+            padding: 40px; /* Mais espaçamento interno */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 3px solid #4CAF50; /* Borda esquerda mais espessa */
+        }
+        .detalhes-produto h2 {
+            font-size: 28px; /* Tamanho maior */
+            margin-bottom: 30px; /* Espaçamento inferior aumentado */
+            color: #333;
+        }
+        .resumo-pedido {
+            width: 100%;
+        }
+        .resumo-pedido p {
+            margin: 20px 0; /* Espaçamento aumentado */
+            font-size: 20px; /* Tamanho maior */
+            color: #555; /* Cinza escuro */
+        }
+        .resumo-pedido hr {
+            border: 0;
+            border-top: 2px solid #ccc; /* Borda superior mais espessa */
+            margin: 40px 0; /* Espaçamento aumentado */
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .retangulo {
+            width: 150px;
+            height: 50px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Detalhes do Produto</h1>
     </header>
 
-    <div class="produto-details">
-        <h2>Ração Premium</h2>
-        <img src="Ração.jpg" alt="Ração Premium">
-        <p class="valor-produto">R$ 50,00</p>
-        <p>Descrição do produto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate mauris id felis volutpat rutrum.</p>
+    <div class="conteudo">
+        <div class="produto-details">
+            <div class="produto-info">
+                <h2>Ração Premium</h2>
+                <img src="Ração.jpg" alt="Ração Premium">
+                <p class="valor-produto">R$ 50,00</p>
+                <p class="descricao-produto">Descrição do produto: Ração Premium Biscrok multi-sabor adulto. Feita com ingredientes naturais e saudáveis para o seu pet.</p>
+            </div>
+            <div class="detalhes-produto">
+                <div class="resumo-pedido">
+                    <h2>Resumo do Pedido</h2>
+                    <p>Total: R$100,00</p>
+                    <p>Desconto: R$10,00</p>
+                    <hr>
+                    <p>Total a pagar: R$90,00</p>
+                </div>
+                <div class="container">
+                    <div style="display: inline-block;">
+                        <input type="text" placeholder="Digite seu CEP" style="width: 200px; height: 30px; padding: 5px;">
+    <button onclick="pesquisarCEP()" style="width: 100px; height: 40px; padding: 5px;">Pesquisar</button>
+</div>
+
+<script>
+    
+</script>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <footer>
