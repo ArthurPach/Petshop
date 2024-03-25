@@ -1,12 +1,10 @@
 
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Gerais */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -15,7 +13,6 @@ body {
     margin: 0;
 }
 
-/* Header */
 header {
     background-color: #2c3e50;
     color: #fff;
@@ -45,7 +42,6 @@ nav ul li {
     text-align: right;
 }
 
-/* Links de Navegação */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -58,7 +54,6 @@ nav ul li a:hover {
     background-color: #34495e;
 }
 
-/* Seção Destaque */
 #destaque {
     background-color: #f8f8f8;
     padding: 50px 0;
@@ -95,7 +90,6 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Produtos e Serviços */
 #servicos,
 #produtos,
 #depoimentos,
@@ -136,7 +130,6 @@ nav ul li a:hover {
     color: #888;
 }
 
-/* Contato */
 .contact-form {
     margin-top: 20px;
 }
@@ -165,7 +158,6 @@ nav ul li a:hover {
     background-color: #c0392b;
 }
 
-/* Tabs */
 .tabs-container {
     display: flex;
     flex-wrap: wrap;
@@ -197,14 +189,12 @@ input[type="radio"]:checked + label + .tab-content {
     display: block;
 }
 
-/* Alimentos */
 .imagem-produto.alimentos img {
     max-width: 100%;
     height: auto;
     width: 15.00%;
 }
 
-/* Footer */
 footer {
     background-color: #2c3e50;
     color: #fff;
