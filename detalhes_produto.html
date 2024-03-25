@@ -9,10 +9,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9; /* Fundo mais claro */
+            background-color: #f9f9f9; 
         }
         header {
-            background-color: #4CAF50; /* Verde mais vibrante */
+            background-color: #4CAF50; 
             color: #fff;
             padding: 20px 0; /* Maior espaçamento */
             text-align: center;
@@ -20,70 +20,70 @@
         .conteudo {
             display: flex;
             justify-content: center;
-            align-items: center; /* Centraliza verticalmente */
+            align-items: center; 
             margin-top: 50px;
         }
         .produto-details {
             display: flex;
             background-color: #fff;
-            border-radius: 20px; /* Borda mais arredondada */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+            border-radius: 20px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
             overflow: hidden;
-            max-width: 900px; /* Limita a largura */
+            max-width: 900px; 
         }
         .produto-info {
-            padding: 40px; /* Mais espaçamento interno */
+            padding: 40px; 
             flex: 1;
         }
         .produto-info h2 {
-            font-size: 32px; /* Tamanho maior */
-            margin-bottom: 20px; /* Espaçamento inferior aumentado */
+            font-size: 32px; 
+            margin-bottom: 20px; 
             color: #333;
         }
         .produto-info img {
-            max-width: 100%; /* Imagem responsiva */
+            max-width: 100%; 
             height: auto;
             border-radius: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
         }
         .valor-produto {
-            font-size: 28px; /* Tamanho maior */
+            font-size: 28px; 
             font-weight: bold;
-            color: #4CAF50; /* Verde */
-            margin-bottom: 20px; /* Espaçamento inferior aumentado */
+            color: #4CAF50; 
+            margin-bottom: 20px; 
         }
         .descricao-produto {
             color: #666;
-            margin-bottom: 30px; /* Espaçamento inferior aumentado */
-            line-height: 1.5; /* Espaçamento entre linhas aumentado */
+            margin-bottom: 30px; 
+            line-height: 1.5; 
         }
         .detalhes-produto {
-            background-color: #f9f9f9; /* Fundo mais claro */
-            padding: 40px; /* Mais espaçamento interno */
+            background-color: #f9f9f9; 
+            padding: 40px; 
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-left: 3px solid #4CAF50; /* Borda esquerda mais espessa */
+            border-left: 3px solid #4CAF50; 
         }
         .detalhes-produto h2 {
-            font-size: 28px; /* Tamanho maior */
-            margin-bottom: 30px; /* Espaçamento inferior aumentado */
+            font-size: 28px; 
+            margin-bottom: 30px; 
             color: #333;
         }
         .resumo-pedido {
             width: 100%;
         }
         .resumo-pedido p {
-            margin: 20px 0; /* Espaçamento aumentado */
-            font-size: 20px; /* Tamanho maior */
-            color: #555; /* Cinza escuro */
+            margin: 20px 0; 
+            font-size: 20px; 
+            color: #555; 
         }
         .resumo-pedido hr {
             border: 0;
-            border-top: 2px solid #ccc; /* Borda superior mais espessa */
-            margin: 40px 0; /* Espaçamento aumentado */
+            border-top: 2px solid #ccc; 
+            margin: 40px 0; 
             width: 100%;
         }
         .container {
@@ -101,19 +101,61 @@
             text-align: center;
             line-height: 50px;
         }
+        header ul {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+        header ul li {
+            display: inline;
+            margin-right: 20px; 
+        }
+        header ul li a {
+            color: #fff;
+            text-decoration: none; 
+        }
+        header ul li a:hover {
+            text-decoration: underline; 
+        }
+        .botao-quantidade {
+            font-size: 24px;
+            margin: 0 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .botao-quantidade:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Detalhes do Produto</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="index.html#servicos">Nossos Serviços</a></li>
+            <li><a href="index.html#produtos">Nossos Produtos</a></li>
+            <li><a href="index.html#formulario-contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
+    
     <div class="conteudo">
         <div class="produto-details">
             <div class="produto-info">
                 <h2>Ração Premium</h2>
                 <img src="Ração.jpg" alt="Ração Premium">
                 <p class="valor-produto">R$ 50,00</p>
+                <button class="botao-quantidade">-</button>
+            <span>0</span>
+            <button class="botao-quantidade">+</button>
                 <p class="descricao-produto">Descrição do produto: Ração Premium Biscrok multi-sabor adulto. Feita com ingredientes naturais e saudáveis para o seu pet.</p>
             </div>
             <div class="detalhes-produto">
