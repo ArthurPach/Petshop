@@ -91,12 +91,21 @@
         nav ul {
             display: flex;
             align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 0 10px;
         }
         .carrossel {
             display: flex;
             position: relative;
             width: 100%;
             overflow: hidden;
+            flex-wrap: nowrap;
+            overflow-x: auto;
 
         }
 
@@ -125,6 +134,39 @@
             width: auto;
             max-height: 100%; 
         }
+        .search-bar {
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .search-bar button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+        .titulo-contato {
+        text-align: center;
+        }
+        
       
     </style>
 </head>
@@ -140,7 +182,7 @@
                 <li><a href="#servicos">Nossos Serviços</a></li>
                 <li><a href="#produtos">Nossos Produtos</a></li>
                 <li><a href="#formulario-contato">Contato</a></li>
-                <li class="carrinho"><a href="detalhes_produto.html"><img src="Graphicloads-100-Flat-Cart.48.png" alt="Carrinho de compras" style="width: 60px; height: 55px;"></a></li> 
+                <li class="carrinho"><a href="detalhes_produto.html"><img src="Graphicloads-100-Flat-Cart-add.256.png" alt="Carrinho de compras" style="width: 60px; height: 55px;"></a></li> 
             </ul>
         </nav>
         <div class="contact-info">
@@ -149,6 +191,13 @@
             <p>Endereço: Rua Dr.Evandro Cardoso, 125A - Feira de Santana, Bahia</p>
         </div>
     </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Digite aqui para pesquisar...">
+        <button type="submit">Pesquisar</button>
+    </div>
+
+    
     <div class="carrossel">
         <div class="slide">
             <img src="Nossos serviços.webp" alt="Imagem 1">
@@ -181,54 +230,73 @@
             <h3>Ração Super Premium</h3>
             <img src="Ração 2.jpg" alt="Ração Super Premium">
             <p class="valor-produto">R$ 70,00</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Ração para gatos sabor carne</h3>
             <img src="Ração 3.jpg" alt="Ração para gatos sabor carne">
             <p class="valor-produto">R$ 190,40</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Ração para gatos adultos</h3>
             <img src="Ração 4.jpg" alt="Ração para gatos adultos">
             <p class="valor-produto">R$ 171,99</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Ração para cães de pequeno porte</h3>
             <img src="Ração 5.jpg" alt="Ração para cães de pequeno porte">
             <p class="valor-produto">R$ 55,90</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Bola cravinho</h3>
             <img src="Brinquedo.jpg" alt="Bola cravinho">
             <p class="valor-produto">R$ 5,99</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Chalesco Brinquedo Macaco Marrom Para Cães</h3>
             <img src="Brinquedo 2.jpg" alt="Chalesco Brinquedo Macaco Marrom Para Cães">
             <p class="valor-produto">R$ 24,49</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática</h3>
             <img src="Acessórios.jpg" alt="Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática">
             <p class="valor-produto">R$ 2,699</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
         <div class="produto">
             <h3>Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)</h3>
             <img src="Acessórios 2.jpg" alt="Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)">
             <p class="valor-produto">R$ 329,90</p>
-            <a href="pagina-de-compra.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
         </div>
     </div>
 </section>
 
+<section id="formulario-contato">
+    <div class="centralizado">
+        <h2 class="titulo-contato">Entre em Contato</h2>
+    </div>
+    <div class="contato-form">
+        <h3>Deixe sua mensagem</h3>
+        <form action="processar_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
 <footer>
     <nav>
         <ul>
@@ -245,5 +313,3 @@
 </footer>
 </body>
 </html>
-
-
