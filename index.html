@@ -188,7 +188,7 @@
         <div class="contact-info">
             <p>Telefone: (75) 99178-3176</p>
             <p>E-mail: Petshop@gmail.com</p>
-            <p>Endereço: Rua Dr.Evandro Cardoso, 125A - Feira de Santana, Bahia</p>
+            <p>Endereço: Rua Dr.Evandro Cardoso, 200B - Feira de Santana, Bahia</p>
         </div>
     </header>
 
@@ -211,6 +211,15 @@
     </div>
 </body>
 </html>
+
+<script>
+    function comprarProduto(nomeProduto) {
+        let produtos = localStorage.getItem('produtos') ? JSON.parse(localStorage.getItem('produtos')) : [];
+        produtos.push(nomeProduto);
+        localStorage.setItem('produtos', JSON.stringify(produtos));
+    }
+</script>
+
 <section id="produtos">
     <div class="centralizado">
         <h2>Produtos à Venda</h2>
@@ -221,16 +230,14 @@
             <h3>Ração Premium</h3>
             <img src="Ração.jpg" alt="Ração Premium">
             <p class="valor-produto">R$ 50,00</p>
-            <a href="detalhes_produto.html">
-                <button class="botao-comprar">Comprar</button>
-            </a>
+            <a href="detalhes_produto.html?produto=Ração%20Premium&imagem=Ração.jpg" class="botao-comprar" onclick="comprarProduto('Ração Premium', 'Ração.jpg')">Comprar</a>
             
         </div>
         <div class="produto">
             <h3>Ração Super Premium</h3>
             <img src="Ração 2.jpg" alt="Ração Super Premium">
             <p class="valor-produto">R$ 70,00</p>
-            <a href="detalhes_produto.html" class="botao-comprar">Comprar</a>
+            <a href="detalhes_produto.html?produto=Ração%20Super%20Premium&imagem=Ração%202.jpg" class="botao-comprar" onclick="comprarProduto('Ração Super Premium', 'Ração 2.jpg')">Comprar</a>
         </div>
         <div class="produto">
             <h3>Ração para gatos sabor carne</h3>
@@ -277,6 +284,27 @@
     </div>
 </section>
 
+<section id="blog" style="clear: both; padding-top: 20px;">
+    <div class="centralizado">
+        <h2>Blog</h2>
+    </div>
+    <div class="post">
+        <h3>Cuidados com Animais de Estimação</h3>
+        <p>Descubra dicas úteis para manter seu animal de estimação feliz e saudável. Desde a alimentação adequada até a higiene e exercícios, saiba como cuidar do seu pet da melhor maneira possível.</p>
+        <a href="https://www.petz.com.br/blog/saude-e-cuidados/saude-animal/">Leia mais</a>
+    </div>
+    <div class="post">
+        <h3>Novidades no Mundo Pet</h3>
+        <p>Fique por dentro das últimas tendências e descubra os novos produtos e serviços disponíveis para cuidar do seu animal de estimação. Mantenha-se atualizado sobre tudo que está acontecendo no mundo dos pets.</p>
+        <a href="https://www.revistapetcenter.com.br/destaques-mercado-pet/novidades-do-mercado-pet-2023/">Leia mais</a>
+    </div>
+    <div class="post">
+        <h3>Eventos da Comunidade</h3>
+        <p>Participe de eventos e atividades da comunidade relacionadas a animais de estimação. Desde feiras de adoção até passeios em parques, encontre maneiras de se envolver e fazer a diferença na vida dos pets e de seus donos.</p>
+        <a href="https://www.santos.sp.gov.br/?q=noticia/feira-estreia-em-santos-com-ultimas-tendencias-do-mercado-pet">Leia mais</a>
+    </div>
+</section>
+
 <section id="formulario-contato">
     <div class="centralizado">
         <h2 class="titulo-contato">Entre em Contato</h2>
@@ -313,3 +341,8 @@
 </footer>
 </body>
 </html>
+
+
+
+
+
