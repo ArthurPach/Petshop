@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto</title>
     <style>
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer nav, footer .social-links {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-links a {
+            color: #fff;
+            margin-left: 10px;
+        }
+        
         body {
             font-family: 'Pacifico', cursive;
             margin: 0;
@@ -21,9 +58,9 @@
             align-items: center;
         }
         .logo {
-            max-width: 150px; /* Definindo a largura máxima da logo */
+            max-width: 150px; 
             height: auto;
-            margin-left: 20px; /* Espaçamento à esquerda */
+            margin-left: 20px; 
             cursor: pointer;
         }
         .conteudo {
@@ -178,7 +215,14 @@
             text-align: center;
             line-height: 50px;
         }
-        
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
 
         
     </style>
@@ -200,144 +244,147 @@
             </ul>
         </nav>
     </header>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Ração Premium</h2>
+            <img src="Ração.jpg" alt="Ração Premium">
+            <p class="valor-produto">R$ 50,00</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Ração Super Premium</h2>
+            <img src="Ração 2.jpg" alt="Ração Super Premium">
+            <p class="valor-produto">R$ 70,00</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Ração para gatos sabor carne</h2>
+            <img src="Ração 3.jpg" alt="Ração para gatos sabor carne">
+            <p class="valor-produto">R$ 190,40</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Ração para gatos adultos</h2>
+            <img src="Ração 4.jpg" alt="Ração para gatos adultos">
+            <p class="valor-produto">R$ 171,99</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Ração para cães de pequeno porte</h2>
+            <img src="Ração 5.jpg" alt="Ração para cães de pequeno porte">
+            <p class="valor-produto">R$ 55,90</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Bola cravinho</h2>
+            <img src="Brinquedo.jpg" alt="Bola cravinho">
+            <p class="valor-produto">R$ 5,99</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Chalesco Brinquedo Macaco Marrom Para Cães</h2>
+            <img src="Brinquedo 2.jpg" alt="Chalesco Brinquedo Macaco Marrom Para Cães">
+            <p class="valor-produto">R$ 24,49</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática</h2>
+            <img src="Acessórios.jpg" alt="Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática">
+            <p class="valor-produto">R$ 2,699</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
+
+    <div class="produto-details">
+        <div class="produto-info">
+            <h2>Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)</h2>
+            <img src="Acessórios 2.jpg" alt="Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos, Confortável (XXG, Cinza Escuro)">
+            <p class="valor-produto">R$ 329,90</p>
+            <button class="botao-quantidade" onclick="decrementar(this)">-</button>
+            <span class="quantidade">0</span>
+            <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        </div>
+        <div class="detalhes-produto">
+        </div>
+    </div>
     
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Ração Premium</h2>
-                <img src="Ração.jpg" alt="Ração Premium">
-                <p class="valor-produto">R$ 50,00</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-
+    <body onload="exibirProdutos()">
+        <div id="detalhes-produto"></div>
         
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Ração super premium</h2>
-                <img src="Ração 2.jpg" alt="Ração super premium">
-                <p class="valor-produto">R$ 70,00</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-        
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Ração para gatos sabor carne</h2>
-                <img src="Ração 3.jpg" alt="Ração para gatos sabor carne">
-                <p class="valor-produto">R$ 190,40</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-        
-    
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Ração para gatos adultos</h2>
-                <img src="Ração 4.jpg" alt="Ração para gatos adultos">
-                <p class="valor-produto">R$ 171,99</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-        
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Ração para cães de pequeno porte</h2>
-                <img src="Ração 5.jpg" alt="Ração para cães de pequeno porte">
-                <p class="valor-produto">R$ 55,90</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Bola cravinho</h2>
-                <img src="Brinquedo.jpg" alt="Bola cravinho">
-                <p class="valor-produto">R$ 5,99</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
+        <div class="resumo-pedido">
+            <h2>Resumo do Pedido</h2>
+            <div id="resumo"></div>
+            <hr>
+            <p id="subtotal">Subtotal: R$ 0,00</p>
+            <p id="total">Total: R$ 0,00</p>
+            <div class="container">
+                <div class="cep-input">
+                    <input type="text" id="cepInput" placeholder="Digite seu CEP" style="width: 200px; height: 30px; padding: 5px;">
+                </div>
+                <div class="pesquisar-button">
+                    <button onclick="pesquisarCEP()" style="width: 100px; height: 40px; padding: 5px;">Pesquisar</button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Brinquedo Macaco Marrom Para Cães</h2>
-                <img src="Brinquedo 2.jpg" alt="Brinquedo Macaco Marrom Para Cães">
-                <p class="valor-produto">R$ 24,49</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática</h2>
-                <img src="Acessórios.jpg" alt="Caixa de areia para gatos com autolimpeza inteligente, robô de limpeza automática">
-                <p class="valor-produto">R$ 2,699</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="produto-details">
-            <div class="produto-info">
-                <h2>Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos</h2>
-                <img src="Acessórios 2.jpg" alt="Caminha Nuvem CAMA Pet Redonda PELUCIA Para Cachorros E Gatos">
-                <p class="valor-produto">R$ 329,90</p>
-                <button class="botao-quantidade" onclick="decrementar(this)">-</button>
-                <span class="quantidade">0</span>
-                <button class="botao-quantidade" onclick="incrementar(this)">+</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="resumo-pedido">
-        <h2>Resumo do Pedido</h2>
-        <div id="resumo"></div>
-        <hr>
-        <p id="subtotal">Subtotal: R$ 0,00</p>
-        <p id="total">Total: R$ 0,00</p>
-
-        <div class="container">
-            <div class="cep-input">
-                <input type="text" placeholder="Digite seu CEP" style="width: 200px; height: 30px; padding: 5px;">
-            </div>
-            <div class="pesquisar-button">
-                <button onclick="pesquisarCEP()" style="width: 100px; height: 40px; padding: 5px;">Pesquisar</button>
-            </div>
-        </div>  
-
+    </body>
 
     <script>
+       
         function incrementar(button) {
             var quantidadeElement = button.parentElement.querySelector('.quantidade');
             var quantidade = parseInt(quantidadeElement.textContent);
@@ -379,6 +426,25 @@
             document.getElementById('subtotal').textContent = 'Subtotal: R$' + subtotal.toFixed(2);
             document.getElementById('total').textContent = 'Total: R$' + subtotal.toFixed(2);
         }
+
     </script>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#politica-privacidade">Política de Privacidade</a></li>
+            <li><a href="#termos-servico">Termos de Serviço</a></li>
+            <li><a href="#mapa-site">Mapa do Site</a></li>
+        </ul>
+    </nav>
+    <div class="social-links">
+        <a href="https://www.facebook.com/mamaveterinaria/?locale=pt_BR">Facebook</a>
+        <a href="https://www.instagram.com/petshopfsa_/">Instagram</a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fpetshop_virtual">Twitter</a>
+    </div>
+</footer>
 </body>
 </html>
+    
+    
+
