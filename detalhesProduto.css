@@ -39,8 +39,9 @@ header {
 }
 
 .produto-info {
-  padding: 40px; 
+  padding: 40px;
   flex: 1;
+  max-width: 70%; /* Nova largura máxima */
 }
 
 .produto-info h2 {
@@ -50,10 +51,10 @@ header {
 }
 
 .produto-info img {
-  max-width: 18%; 
+  max-width: 100%; /* Alteração da largura máxima */
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .valor-produto {
@@ -165,18 +166,21 @@ header ul li {
 
 header ul li a {
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
+  background-color: #4CAF50; /* Cor de fundo dos botões */
+  padding: 10px 20px; /* Ajuste do padding para maior área clicável */
+  border-radius: 5px; /* Borda arredondada */
 }
 
 header ul li a:hover {
-  text-decoration: underline; 
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
 }
 
 .botao-quantidade {
   font-size: 24px;
   margin: 0 10px;
   padding: 5px 10px;
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Cor de fundo dos botões */
   color: white;
   border: none;
   border-radius: 50%;
@@ -208,10 +212,14 @@ footer nav ul li {
 footer nav ul li a {
   color: #fff;
   text-decoration: none;
+  background-color: #4CAF50; /* Cor de fundo dos botões */
+  padding: 10px 20px; /* Ajuste do padding para maior área clicável */
+  border-radius: 5px; /* Borda arredondada */
+  border: none; /* Removendo a borda */
 }
 
 footer nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
 }
 
 footer .social-links a {
@@ -237,13 +245,12 @@ ul {
 li {
   padding: 10px;
   border: 1px solid black;
-  width: 440px;
-  height: fit-content;
-  margin: 20px;
+  margin: 20px 10px; /* Ajuste da margem */
   text-align: center;
   border-radius: 10px;
   list-style-type: none;
   background-color: #e0e0e0;
+  width: auto; /* Remoção da largura fixa */
 }
 
 li > :nth-child(2) {
@@ -253,4 +260,26 @@ li > :nth-child(2) {
 li > :nth-child(3) {
   color: green;
   margin-top: 10px;
+}
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: left; /* Centraliza os elementos verticalmente */
+}
+
+.cep-input {
+  margin-left: 10px; /* Espaçamento entre os elementos */
+}
+
+.pesquisar-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.pesquisar-button:hover {
+  background-color: #45a049;
 }
